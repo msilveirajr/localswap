@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPOSAL</title>
+</head>
+<body>
+
+    <h1>NEW OFFER</h1>
+
+    <form action="/proposal" method="POST">
+        <label for="Title">Title:</label>
+    <input type="text" id="Title" name="Title" required>
+    <br>
+
+    <label for="description">Description:</label>
+<textarea id="description" name="description" rows="4" cols="50" required></textarea>
+    <br>
+
+    <label for="value">Value:</label>
+    <input type="text" id="value" name="value" required>
+    <br>
+
+      <label for="imageURL">Image:</label>
+    <input type="image" id="imageURL" name="imageURL" required>
+    <br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    <br>
+
+    <label for="owner">Owner:</label>
+    <input type="text" id="owner" name="owner" required>
+    <br>
+
+    <label for="category">Category</label>
+   <select name="category" id="category" required>
+       <option value="Item">Item</option>
+       <option value="Service">Service</option>
+   </select>
+    <br>
+
+    <label for="status">Status</label>
+   <select name="status" id="status" required>
+       <option value="Available">Available</option>
+       <option value="Traded">Traded</option>
+   </select>
+   <br>
+
+    <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

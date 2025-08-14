@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DASHBOARD </title>
+        <link href="/styles/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-blue-950">
+<h1>WELCOME TO THE DASHBOARD</h1>
+
+<nav class="bg-blue-900">
+  <div class="max-w-7x1 mx-auto px-4 sm:px-6  lg:px-8">
+
+    <div class="flex justify-between h-16">
+
+      <div class="flex">
+
+        <div class="flex-shrink-0">
+          <a href="/open.ejs" class="">
+            <img class="h-9 w-9 rounded-full" src="img/trading.jpg" alt="Trading" />
+          </a>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="/proposal" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">New Offer</a>
+          <a href="/blabla" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Pending</a>
+          <a href="/register" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Register</a>
+        </div>
+
+      </div class="-mr-2 flex md:hidden">
+      <button id="menuButton" class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hove:text-white hover:bg-blue-950 
+      focus:outline-none focus:bg-gray-400 focus:text-white transition duration-150 ease-in-out" aria-label="Menu" aria-expended="false">
+        <svg class="h-6 w-6" stroke="currentColor " fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div>
+
+      </div>
+
+      <div class="flex items-center">
+        <div class="relative">
+          <input type="text" placeholder="Search..." class="bg-blue-800 text-white px-3 py-2 rounded-md" />
+
+          <button class="absolute right-0 top-0 mt-2 mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 2a9 9 0 100 18 9 9 0 000-18zM11 2v4m0 12v4m-4-4h8" />
+              
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="menu" class="hidden md-hidden">
+    <div class="px-2 pt-2 pd-3 sm:px-3">
+      <a href="#" class="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out">New Offer</a>
+      <a href="#" class="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out">Pending</a>
+      <a href="#" class="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out">Register</a>
+    </div>
+
+  </div>
+</nav>
+ 
+<script>
+  document.getElementById("menuButton").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+
+
+  </body>
+</html>
