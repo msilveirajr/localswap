@@ -158,5 +158,5 @@ app.get('/dashboard', (req, res) => {
 
 app.listen(PORT, () => {
     console.log('HELLOOO')
-})
+});
 
